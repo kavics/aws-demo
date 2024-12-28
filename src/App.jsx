@@ -9,30 +9,25 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <a href="." target="_blank">
-          <img src={kavicsLogo} className="logo" alt="Kavics logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
       <div className="card">
+        <button onClick={() => alert('Helló Dávid!\r\n... from a very first AWS hosted webapp.\r\nNa ki a király?')}>
+          Message to <b>edavid</b>
+        </button><br/>
         <button onClick={() => setCount((count) => count + 1)}>
           count of clicks is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more.<br/>
-        Click on the kavics logo to reset.
-      </p>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          built by: <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          dev with: <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+        <a href="." target="_blank">
+          written by: <img src={kavicsLogo} className="logo" alt="Kavics logo" />
+        </a>
+      </div>
     </>
   )
 }
